@@ -1,83 +1,16 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:background="#E3E3E3" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HomeActivity" >
 
-    <RelativeLayout
-        android:id="@+id/topBar"
-        android:layout_width="fill_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/title_bg_qing" >
+        android:text="@string/hello_world" />
 
-        <Button
-            android:id="@+id/bNew"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:background="@drawable/btn_menu" />
-
-        
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/app_name"
-            android:textColor="#ffffffff"
-            android:textSize="25sp" />
-    </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-      >
-
-        <TextView
-            android:id="@+id/tvTag1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="全部"
-            android:textSize="20sp"
-            android:textColor="#ff000000" />
-
-        <TextView
-            android:id="@+id/tvTag2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="图文"
-            android:textSize="20sp"
-            android:textColor="#ff000000" />
-
-        <TextView
-            android:id="@+id/tvTag3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="最热"
-            android:textSize="20sp"
-            android:textColor="#ff000000" />
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/ivCursor"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:scaleType="matrix"
-         android:paddingLeft="40dip"
-        android:src="@drawable/cursor_pink" />
-    
-     <android.support.v4.view.ViewPager
-        android:id="@+id/vpViewPager1"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/lk_cover_2" >
-    </android.support.v4.view.ViewPager>
-
-</LinearLayout>
+</RelativeLayout>
